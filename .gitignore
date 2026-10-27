@@ -1,0 +1,62 @@
+# ==============================================================================
+# FlightOps Platform - .gitignore
+# Exclusión de datos masivos, artefactos temporales, entornos y checkpoints
+# ==============================================================================
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Datos masivos de la Arquitectura Medallón (Prohibido subir a Git)
+data/bronze/
+data/silver/
+data/gold/
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.tar.gz
+*.zip
+
+# Preservar estructura de directorios en Git
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+!models/.gitkeep
+!assets/.gitkeep
+
+# Modelos binarios pesados (conservar directorio, ignorar binarios)
+models/*.joblib
+models/*.pkl
+models/*.onnx
+
+# Python bytecode y caché
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs y temporales
+*.log
+scripts/nbhelper.py
