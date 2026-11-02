@@ -50,7 +50,7 @@ Para clonar e instalar las dependencias en un entorno virtual limpio:
 ```bash
 # 1. Clonar el repositorio
 git clone https://github.com/EzequielJaramillo/flightops-air-traffic-analytics.git
-cd procesamiento-datos-vuelos
+cd flightops-air-traffic-analytics
 
 # 2. Crear y activar entorno virtual
 python -m venv .venv
