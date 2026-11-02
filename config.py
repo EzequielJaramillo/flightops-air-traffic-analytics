@@ -27,6 +27,7 @@ GOLD_AIRLINE_MONTHLY = GOLD_DIR / "airline_monthly_metrics.parquet"
 GOLD_ROUTES = GOLD_DIR / "route_metrics.parquet"
 GOLD_DELAY_CAUSES = GOLD_DIR / "delay_causes_monthly.parquet"
 GOLD_ML_FEATURES = GOLD_DIR / "ml_features"      # dataset particionado por mes
+GOLD_ML_DATASET = GOLD_DIR / "ml_features_dataset.parquet"
 
 # --- Artefactos de modelos -----------------------------------------------------
 MODELS_DIR = PROJECT_ROOT / "models"
